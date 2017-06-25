@@ -62,9 +62,10 @@ $payment -> setIntent( 'sale' )
 
 try {
 	$payment -> create( $paypal );
-	echo "SUCCESS";
 } catch ( Exception $e) {
 	die( $e );
 }
 
-echo $approvalUrl = $payment -> getApprovalLink();
+$approvalUrl = $payment -> getApprovalLink();
+
+header("Location: { $approvalUrl }");
