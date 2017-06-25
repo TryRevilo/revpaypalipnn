@@ -68,4 +68,4 @@ try {
 
 $approvalUrl = $payment -> getApprovalLink();
 
-header("Location: { $approvalUrl }");
+header("Location: {$approvalUrl}");
