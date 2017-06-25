@@ -7,11 +7,13 @@ require 'app/start.php';
 
 if ( !isset( $_GET[ 'success' ], $_GET[ 'paymentId' ], $_GET[ 'payerID' ]) )
 {
+	echo "Fail 1";
 	die();
 }
 
 if ( (bool) $_GET[ 'success' ] === false )
 {
+	echo "Fail 2";
 	die();
 }
 
