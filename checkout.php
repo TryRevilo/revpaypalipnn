@@ -67,4 +67,4 @@ try {
 	die( $e );
 }
 
-echo $approvalUrl = $payment -> getApprovalURL();
+echo $approvalUrl = $payment -> getApprovalLink();
