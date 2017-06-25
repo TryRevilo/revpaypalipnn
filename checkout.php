@@ -63,7 +63,7 @@ $payment -> setIntent( 'sale' )
 try {
 	$payment -> create( $paypal );
 } catch ( Exception $e) {
-	die( $e );
+	echo $ex->getData();
 }
 
 echo $approvalUrl = $payment -> getApprovalURL();
