@@ -52,7 +52,7 @@ $transaction -> setAmount( $amount )
 
 $redirectUrls = new RedirectUrls();
 $redirectUrls -> setReturnUrl( SITE_URL . '/pay.php?success=true')
-		-> setCancelUrl( SITE_URL . 'pay.php?success=false');
+		-> setCancelUrl( SITE_URL . '/pay.php?success=false');
 
 $payment = new Payment();
 $payment -> setIntent( 'sale' )
