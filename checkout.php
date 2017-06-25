@@ -18,8 +18,8 @@ if ( !isset ($_POST['product'], $_POST['price'] ))
 }
 
 $product = $_POST['product'];
-$price = ( float ) $_POST['price'];
-$shipping = ( float ) 2.00;
+$price = $_POST['price'];
+$shipping = 2.00;
 
 $total = $price + $shipping;
 
