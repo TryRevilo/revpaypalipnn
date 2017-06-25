@@ -2,7 +2,7 @@
 
 require 'PayPal/autoload.php';
 
-define('SITE_URL', 'https://revpaypalipnnoncomposer.herokuapp.com/checkout.php');
+define('SITE_URL', 'https://revpaypalipnnoncomposer.herokuapp.com');
 
 $paypal = new \PayPal\Rest\ApiContext (
 	new \PayPal\Auth\OAuthTokenCredential (
