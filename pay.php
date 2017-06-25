@@ -18,7 +18,7 @@ if ( (bool) $_GET[ 'success' ] == false )
 $paymentId = $_GET[ 'paymentId' ];
 $payerId = $_GET[ 'payerID' ];
 
-$payment = Payment :: get( $payment, $paypal );
+$payment = Payment :: get( $paymentId, $paypal );
 
 $execute = new PaymentExecution();
 $execute -> setPayerId( $paymentId );
