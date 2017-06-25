@@ -5,7 +5,7 @@ use PayPal\Api\PaymentExecution;
 
 require 'app/start.php';
 
-if ( !isset( $_GET[ 'success' ], $_GET[ 'paymentId' ], $_GET[ 'payID' ]) )
+if ( !isset( $_GET[ 'success' ], $_GET[ 'paymentId' ], $_GET[ 'payerID' ]) )
 {
 	die();
 }
