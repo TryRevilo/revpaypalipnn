@@ -62,6 +62,7 @@ $payment -> setIntent( 'sale' )
 
 try {
 	$payment -> create( $paypal );
+	echo "SUCCESS";
 } catch ( Exception $e) {
 	die( $e );
 }
