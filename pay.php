@@ -15,4 +15,20 @@ if ( (bool) $_GET[ 'success' ] === false )
 	die();
 }
 
+$paymentId = $_GET[ 'paymentId' ];
+$payerId = $_GET[ 'payerID' ];
+
+$payment = Payment :: get( $paymentId, $paypal );
+
+$execute = new PaymentExecution();
+$execute -> setPayerId( $payerId );
+
+try {
+	$result = $payment -> execute( $execute, $paypal );
+} catch ( Execution $e ) {
+	die( $e );
+}
+
 echo 'Payment Made. Thanks!';
+
+?>
