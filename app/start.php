@@ -2,7 +2,7 @@
 
 require 'PayPal/autoload.php';
 
-define('SITE_URL', 'http://mmacadvocates.com/ipn');
+define('SITE_URL', 'https://revpaypalipnnoncomposer.herokuapp.com/checkout.php');
 
 $paypal = new \PayPal\Rest\ApiContext (
 	new \PayPal\Auth\OAuthTokenCredential (
